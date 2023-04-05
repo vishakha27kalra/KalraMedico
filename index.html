@@ -4,66 +4,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kalra Medico and Surgico</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="kalra.css">
 </head>
 <body>
 	<header>
-		<h1>Kalra Medico and Surgico</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<h1>Kalra Medico and Surgico</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
+
+	<section id="banner">
+		<div class="container">
+			<h2>Welcome to Kalra Medico and Surgico</h2>
+			<p>Your one-stop destination for all your medical and surgical needs!</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</section>
+
 	<main>
-		<section id="banner">
-			<h2>Providing Quality Medical and Surgical Products</h2>
-			<p>Welcome to Kalra Medico and Surgico, your one-stop-shop for all medical and surgical needs. We offer a wide range of high-quality products and services to meet the needs of our customers. Browse our products and services to find what you need today!</p>
-			<a href="#" class="btn">Learn More</a>
-		</section>
-		<section id="about">
-			<h2>About Us</h2>
-			<p>At Kalra Medico and Surgico, we are committed to providing the highest quality medical and surgical products to our customers. With years of experience in the industry, we have established ourselves as a reliable and trusted source for all your medical and surgical needs.</p>
-			<a href="#" class="btn">Learn More</a>
-		</section>
-		<section id="products">
-			<h2>Our Products</h2>
-			<ul>
-				<li><a href="#">Medicines</a></li>
-				<li><a href="#">Medical Equipment</a></li>
-				<li><a href="#">Surgical Instruments</a></li>
-				<li><a href="#">Health Supplements</a></li>
-			</ul>
-		</section>
 		<section id="services">
-			<h2>Our Services</h2>
-			<ul>
-				<li><a href="#">Prescription Refills</a></li>
-				<li><a href="#">Health Checks</a></li>
-				<li><a href="#">Blood Pressure Monitoring</a></li>
-				<li><a href="#">Vaccinations</a></li>
-			</ul>
+			<div class="container">
+				<h2>Our Services</h2>
+				<ul>
+					<li><a href="#">Pharmacy</a></li>
+					<li><a href="#">Medical Supplies</a></li>
+					<li><a href="#">Surgical Supplies</a></li>
+				</ul>
+			</div>
 		</section>
+
+		<section id="products">
+			<div class="container">
+				<h2>Our Products</h2>
+				<ul>
+					<li><a href="#">Prescription Drugs</a></li>
+					<li><a href="#">Over-the-Counter Medications</a></li>
+					<li><a href="#">Medical Devices</a></li>
+					<li><a href="#">First Aid Supplies</a></li>
+				</ul>
+			</div>
+		</section>
+
 		<section id="contact">
-			<h2>Contact Us</h2>
-			<form action="#" method="POST">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<input type="submit" value="Send">
-			</form>
+			<div class="container">
+				<h2>Contact Us</h2>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" required></textarea>
+
+					<input type="submit" value="Submit">
+				</form>
+			</div>
 		</section>
 	</main>
+
 	<footer>
-		<p>&copy; 2023 Kalra Medico and Surgico. All rights reserved.</p>
+		<div class="container">
+			<p>&copy; 2023 Kalra Medico and Surgico. All rights reserved.</p>
+		</div>
 	</footer>
+
+	<script src="kalra.js"></script>
 </body>
 </html>
-
