@@ -13,7 +13,7 @@ pipeline {
     stage('checkout') {
       steps {
         git branch: 'main', url: 'https://github.com/vishakha27kalra/KalraMedico'
-        withCredentials([usernamePassword(credentialsId: 'git-cred', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
+        /*withCredentials([usernamePassword(credentialsId: 'git-cred', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
           // Use the Git credentials in the pipeline steps
           // For example, you can use environment variables like $GIT_USERNAME and $GIT_PASSWORD
           // to provide the credentials to the Git commands
@@ -23,7 +23,7 @@ pipeline {
           sh 'git add .'
           sh 'git commit -m "Modified files"'
           sh 'git push origin main'
-        }
+        }*/
       }
     }
 
