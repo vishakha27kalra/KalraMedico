@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/vishakha27kalra/KalraMedico'
+        git branch: 'master', url: 'https://github.com/vishakha27kalra/KalraMedico'
         /*withCredentials([usernamePassword(credentialsId: 'git-cred', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
           // Use the Git credentials in the pipeline steps
           // For example, you can use environment variables like $GIT_USERNAME and $GIT_PASSWORD
