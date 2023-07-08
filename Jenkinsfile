@@ -23,7 +23,7 @@ pipeline {
           sh 'git add .'
           sh 'git commit -m "Modified files"'
           sh 'git push origin main'
-
+        }
       }
     }
 
