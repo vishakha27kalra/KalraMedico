@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/vishakhakalra/webapp'
+        git branch: 'main', url: 'https://github.com/vishakha27kalra/KalraMedico'
 
       }
     }
